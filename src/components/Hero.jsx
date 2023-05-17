@@ -1,4 +1,3 @@
-// import { motion } from "framer-motion";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
@@ -16,10 +15,10 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi , I am <span className="text-[#915eff]"> Omar </span>
+            Hi , I'm <span className="text-[#915eff]"> Omar </span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop web applications and i am currently in{" "}
+            I develop web applications and i'm currently in{" "}
             <br className="sm:block hidden" />
             training at Wild Code School bootcamp in Paris.
           </p>
