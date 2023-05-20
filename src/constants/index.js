@@ -220,7 +220,7 @@ import {
         },
       ],
       image: prog,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Omcci/WCS-Projet2",
     },
     {
       name: "Fictional CV",
@@ -241,7 +241,7 @@ import {
         },
       ],
       image: mario,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/T0MLE/WCS-project1",
     },
     {
       name: "Portfolio",
@@ -262,7 +262,7 @@ import {
         },
       ],
       image: pfolio,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Omcci/3DPortfolio",
     },
   ];
   
