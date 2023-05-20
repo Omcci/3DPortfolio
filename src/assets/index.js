@@ -29,6 +29,9 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import prog from "./prog.png";
+import mario from "./mario.png";
+import pfolio from "./pfolio.png";
 
 export {
   logoo,
@@ -59,4 +62,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  prog,
+  mario,
+  pfolio,
 };

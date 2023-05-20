@@ -40,20 +40,22 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>A propos.</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Hello and welcome to my Portfolio ! My name is Omar Melloulchi aka
-        Omcci. I'm currently on a journey to pursue my passion for tech as a web
-        developer, and I'm excited to share my progress with you. After working
-        as a coach and physical education teacher for several years, I realized
-        that my true passion lies in the world of tech. I've always been drawn
-        to the idea of creating something from scratch and watching it come to
-        life, and that's what led me to embark on this new adventure.
+        Bienvenue sur mon Portfolio ! Je m'appelle Omar Melloulchi, alias Omcci.
+        Je suis actuellement en train de vivre ma passion pour la technologie en
+        tant que développeur web, et je suis ravi de pouvoir partager mes
+        progrès avec vous. Après avoir travaillé comme coach et professeur
+        d'éducation physique pendant plusieurs années, j'ai réalisé que ma
+        véritable passion se trouve dans le monde de la technologie. J'ai
+        toujours été attiré par l'idée de créer quelque chose à partir de rien
+        et de le voir prendre vie, et c'est ce qui m'a poussé à me lancer dans
+        cette nouvelle aventure.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

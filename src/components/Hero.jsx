@@ -15,16 +15,18 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi , I'm <span className="text-[#915eff]"> Omar </span>
+            Hey, moi c'est <span className="text-[#915eff]"> Omar </span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop web applications and i'm currently in{" "}
+            Je développe des applications web et je suis actuellement{" "}
             <br className="sm:block hidden" />
-            training at Wild Code School bootcamp in Paris.
+            en formation au bootcamp de Wild Code School à Paris. Je suis en
+            recherche active d'une alternance pour un poste de Développeur Web
+            Frontend ou Fullstack à compter de Septembre 2023
           </p>
         </div>
       </div>
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
