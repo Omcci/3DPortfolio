@@ -68,7 +68,7 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
-        <p className={styles.sectionSubText}>Contacte moi</p>
+        <p className={styles.sectionSubText}>Discutons</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form
@@ -114,7 +114,7 @@ const Contact = () => {
             type="submit"
             className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md rounded-2xl shadow-primary"
           >
-            {loading ? "Sending ..." : "Send"}
+            {loading ? "Envoi ..." : "Envoyer"}
           </button>
         </form>
       </motion.div>

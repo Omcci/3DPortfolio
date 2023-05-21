@@ -203,7 +203,7 @@ import {
     {
       name: "Fitness App",
       description:
-      "A platform that allows user to start working out with more than a thousand of different exercises, along with custom programs for different goals and a nutrition section with various meal recipes. Built as the second project inside Wild Code School bootcamp.",
+      "Une plateforme qui permet aux utilisateurs d'avoir accès à plus de mille exercices physiques différents, en plus de programmes personnalisés pour une variété d'objectifs et une section nutrition proposant des recettes variées de repas. Développé en tant que deuxième projet au sein de la formation à la Wild Code School.",
         // "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.""Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
         {
@@ -225,7 +225,7 @@ import {
     {
       name: "Fictional CV",
       description:
-        "Website created as a first project in Wild Code School bootcamp, we had to build a CV of a fictional character using only Javascript, HTML and CSS",
+        "Un site web créé dans le cadre du premier projet du bootcamp de la Wild Code School, où nous devions construire un CV pour un personnage fictif en utilisant uniquement Javascript, HTML et CSS.",
       tags: [
         {
           name: "html",
@@ -246,7 +246,7 @@ import {
     {
       name: "Portfolio",
       description:
-        "A side project that showcase my skills and experience in the field of Web Development. It was a first time using ThreeJS and Tailwind.",
+        "Un side project qui met en valeur mes compétences et mon expérience dans le domaine du développement web. Première utilisation de ThreeJS et TailwindCSS.",
       tags: [
         {
           name: "react",
