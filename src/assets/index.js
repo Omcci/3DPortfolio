@@ -33,6 +33,8 @@ import prog from "./prog.png";
 import mario from "./mario.png";
 import pfolio from "./pfolio.png";
 
+import cv from './cv.png'
+
 export {
   logoo,
   backend,
@@ -65,4 +67,5 @@ export {
   prog,
   mario,
   pfolio,
+  cv,
 };

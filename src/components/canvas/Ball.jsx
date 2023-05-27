@@ -41,6 +41,7 @@ const BallCanvas = ({ icon }) => {
     <Canvas
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
+      style={{width:"150px"}}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
