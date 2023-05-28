@@ -17,20 +17,21 @@ const ProjectCard = ({
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 1)}>
       <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        tiltMaxAngleX={25}
+      tiltMaxAngleY={25}
+      perspective={1500}
+      scale={1.05}
+      transitionSpeed={2000}
+      gyroscope={true}
+        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full transform"
       >
-        <div className="relative w-full h-[230px]">
+        <div className="relative w-full h-[200px] transform ">
           <img
             src={image}
             alt={name}
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-[80%] h-[100%] object-cover rounded-2xl texttransform"
           />
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+          <div className="absolute inset-0 flex justify-end m-3 card-img_hover texttransform" >
             <div
               onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
@@ -43,8 +44,8 @@ const ProjectCard = ({
             </div>
           </div>
         </div>
-
         <div className="mt-5">
+        {/* <div className="mt-5 texttransform"> */}
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
           <p className="text-secondary mt-2 text-[14px]">{description}</p>
         </div>

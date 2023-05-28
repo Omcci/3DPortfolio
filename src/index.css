@@ -124,6 +124,15 @@
   -webkit-text-fill-color: transparent;
 }
 
+.transform{ 
+  transform-style: preserve-3d;
+  perspective: 4000px;
+}
+
+.texttransform {
+    transform: translateZ(40px);
+}
+
 /* canvas- styles */
 .canvas-loader {
   font-size: 10px;
