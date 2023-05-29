@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { fadeIn, slideIn } from "../utils/motion";
 import lkdn from "../assets/lkdn.png";
+import { Link } from "react-router-dom";
 // import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
@@ -44,12 +45,14 @@ const Hero = () => {
           className="bg-tertiary rounded-[20px] py-5 h-[40px] w-[140px] flex justify-evenly items-center flex-col"
         >
           <h3 className="text-white text-[20px] font-bold text-center">
+            <Link to="/dashboard">
             <button
               type="submit"
               className="bg-tertiary  outline-none w-fit text-white font-bold shadow-md rounded-2xl shadow-primary"
             >
               Mon CV
             </button>
+            </Link>
           </h3>
         </div>
       </motion.div>

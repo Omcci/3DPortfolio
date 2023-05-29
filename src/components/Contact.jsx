@@ -5,6 +5,8 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { Canvas } from "@react-three/fiber";
+
 import { fromHalfFloat } from "three/src/extras/DataUtils";
 
 //template_fwm2gdw
@@ -124,7 +126,9 @@ const Contact = () => {
         variants={slideIn("right", "tween", 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
-        {/* <EarthCanvas /> */}
+        {/* <Canvas>
+          <EarthCanvas />
+        </Canvas> */}
       </motion.div>
     </div>
   );
