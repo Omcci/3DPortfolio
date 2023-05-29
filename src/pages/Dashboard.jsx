@@ -15,20 +15,20 @@ function Dashboard() {
 
   return (
     <div>
-      <div className=" w-full h-[100vh] flex justify-center items-center">
+      <div className="flex justify-center items-center m-12 ">
         <StarsCanvas />
-        <div className="flex justify-end">
+        <div className="relative">
           <Link to="/" onClick={handleNav}>
             <img
               src={ba}
               alt="backarrow"
-              className=" w-16 mr-10 "
+              className="w-16 hover:scale-150 ease-in duration-300"
             />
           </Link>
         </div>
         <motion.div
           variants={fadeIn("right", "spring", 0.5, 0.5)}
-          className=" green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+          className="green-pink-gradient p-[1px] rounded-[20px] shadow-card m-20"
         >
           <img src={cv} alt="CvOmar" className="bg-auto rounded-[20px]" />
         </motion.div>
