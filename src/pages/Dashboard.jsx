@@ -28,9 +28,9 @@ function Dashboard() {
         </div>
         <motion.div
           variants={fadeIn("right", "spring", 0.5, 0.5)}
-          className="green-pink-gradient p-[1px] rounded-[20px] shadow-card m-20"
+          className="green-pink-gradient p-[1px] rounded-[20px] shadow-card m-5 sm:m-20 "
         >
-          <img src={cv} alt="CvOmar" className="bg-auto rounded-[20px]" />
+          <img src={cv} alt="CvOmar" className="bg-auto rounded-[20px] sm:bg-contain" />
         </motion.div>
       </div>
     </div>
