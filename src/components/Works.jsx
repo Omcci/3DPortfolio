@@ -75,12 +75,11 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          À travers ces projets, j'ai résolu des problèmes complexes, exploré de
-          nouvelles technologies, de nouveaux outils, effectués pour certains en
-          groupe et d'autres seul. En cliquant sur les cartes, vous aurez un
-          aperçu concret de mon travail et de mes compétences en développement
-          web. N'hésitez pas à explorer les liens vers les dépôts de code et les
-          démonstrations en direct pour en savoir plus sur chaque projet.
+          À travers ces projets, je me suis confronté à des problèmes complexes,
+          j'ai pu exploré de nouvelles technologies, de nouveaux outils. Ces
+          projets ont été effectués pour certains en groupe et d'autres seul. En
+          cliquant sur le logo Github sur les cartes, vous aurez un aperçu du
+          travail effectué. N'hésitez pas à jeter un oeil sur les repo !
         </motion.p>
       </div>
 
