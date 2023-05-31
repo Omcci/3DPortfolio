@@ -2,6 +2,7 @@ import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { github } from "../assets";
+import { internet } from "../assets"
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -12,7 +13,9 @@ const ProjectCard = ({
   description,
   tags,
   image,
+  pfolio1,
   source_code_link,
+  deployedproject
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 1)}>
@@ -31,7 +34,7 @@ const ProjectCard = ({
             alt={name}
             className="w-[80%] h-[100%] object-cover rounded-2xl texttransform"
           />
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover texttransform">
+          <div className="absolute top-0 right-0 flex justify-end m-3 card-img_hover texttransform">
             <div
               onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
@@ -39,6 +42,18 @@ const ProjectCard = ({
               <img
                 src={github}
                 alt="github"
+                className="w-2/3 h-2/3 object-contain"
+              />
+            </div>
+          </div>
+          <div className="absolute top-12 right-0 flex justify-end m-4 card-img_hover texttransform">
+            <div
+              onClick={() => window.open(deployedproject, "_blank")}
+              className="bg-white w-8 h-8 rounded-full flex justify-center items-center cursor-pointer"
+            >
+              <img
+                src={internet}
+                alt="website"
                 className="w-2/3 h-2/3 object-contain"
               />
             </div>

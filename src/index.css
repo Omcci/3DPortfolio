@@ -130,7 +130,7 @@
 }
 
 .texttransform {
-    transform: translateZ(40px);
+    transform: translateZ(100px);
 }
 
 /* canvas- styles */

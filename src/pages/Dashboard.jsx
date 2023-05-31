@@ -1,8 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
-import cv from "../assets/CVfin.png";
+import cv from "../assets/pdf/CVfin.pdf";
 import ba from "../assets/backarrow.png";
 import { StarsCanvas } from "../components";
-import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
 
@@ -12,6 +11,8 @@ function Dashboard() {
   const handleNav = () => {
     nav(-1);
   };
+
+
 
   return (
     <div>
@@ -30,7 +31,10 @@ function Dashboard() {
           variants={fadeIn("right", "spring", 0.5, 0.5)}
           className="green-pink-gradient p-[1px] rounded-[20px] shadow-card m-5 sm:m-20 "
         >
-          <img src={cv} alt="CvOmar" className="bg-auto rounded-[20px] sm:bg-contain" />
+                {/* <Document file={cv}   onLoadSuccess={() => console.log('PDF loaded successfully')}
+  onLoadError={(error) => console.log('PDF loading error:', error)} /> */}
+
+          {/* <img src={cv} alt="CvOmar" className="bg-auto rounded-[20px] sm:bg-contain" /> */}
         </motion.div>
       </div>
     </div>

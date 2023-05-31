@@ -31,9 +31,11 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import prog from "./prog.png";
 import mario from "./mario.png";
-import pfolio from "./pfolio.png";
+// import pfolio from "./pfolio.png";
 
 import cv from './cv.png'
+import internet from './internet.png'
+import pfolio1 from './pfolio1.gif'
 
 export {
   logoo,
@@ -66,6 +68,8 @@ export {
   tripguide,
   prog,
   mario,
-  pfolio,
+  // pfolio,
   cv,
+  internet,
+  pfolio1
 };

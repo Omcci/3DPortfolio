@@ -25,7 +25,8 @@ import {
     threejs,
     prog,
     mario,
-    pfolio,
+    // pfolio,
+    pfolio1
   } from "../assets";
   
   export const navLinks = [
@@ -221,6 +222,7 @@ import {
       ],
       image: prog,
       source_code_link: "https://github.com/Omcci/WCS-Projet2",
+      deployedproject: "https://wildfitnessclub.netlify.app",
     },
     {
       name: "Fictional CV",
@@ -242,6 +244,7 @@ import {
       ],
       image: mario,
       source_code_link: "https://github.com/T0MLE/WCS-project1",
+      deployedproject: "https://t0mle.github.io/WCS-project1/",
     },
     {
       name: "Portfolio",
@@ -261,8 +264,9 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: pfolio,
+      image: pfolio1,
       source_code_link: "https://github.com/Omcci/3DPortfolio",
+      deployedproject: "https://omci-portfolio.netlify.app",
     },
   ];
   
