@@ -116,7 +116,7 @@
 
 // export default EarthCanvas;
 
-import React from 'react'
+
 
 function Earth() {
   return (

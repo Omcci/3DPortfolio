@@ -24,9 +24,13 @@ import {
     // tripguide,
     threejs,
     prog,
+    wfc,
+    mariogif,
     mario,
     // pfolio,
-    pfolio1
+    pfolio1,
+    creator,
+    express
   } from "../assets";
   
   export const navLinks = [
@@ -46,21 +50,21 @@ import {
   
   const services = [
     {
-      title: "Développeur Web",
-      icon: web,
+      title: "React",
+      icon: reactjs,
     },
     {
-      title: "Développeur React",
-      icon: mobile,
+      title: "Javascript",
+      icon: javascript,
     },
     {
-      title: "Développeur Frontend",
-      icon: backend,
+      title: "TailwindCSS",
+      icon: tailwind,
     },
-    // {
-    //   title: "Content Creator",
-    //   icon: creator,
-    // },
+    {
+      title: "Express",
+      icon: express,
+    },
   ];
   
   const technologies = [
@@ -220,7 +224,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: prog,
+      image: wfc,
       source_code_link: "https://github.com/Omcci/WCS-Projet2",
       deployedproject: "https://wildfitnessclub.netlify.app",
     },
@@ -242,7 +246,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: mario,
+      image: mariogif,
       source_code_link: "https://github.com/T0MLE/WCS-project1",
       deployedproject: "https://t0mle.github.io/WCS-project1/",
     },

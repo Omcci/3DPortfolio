@@ -9,8 +9,9 @@ import {
   Tech,
   Works,
   StarsCanvas,
+  EarthCanvas,
 } from "../components";
-
+import { Canvas } from "@react-three/fiber";
 
 const App = () => {
   return (
@@ -31,15 +32,18 @@ const App = () => {
           <Works />
         </div>
 
-        <div className="relative z-0">
+        {/* <div className="relative z-0">
           <Tech />
-        </div>
+        </div> */}
 
         {/* <Experience /> */}
         {/* <Feedbacks /> */}
         <div className="relative z-0">
+      
           <Contact />
           <StarsCanvas />
+         
+          
         </div>
       </div>
       </>

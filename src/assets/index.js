@@ -36,6 +36,9 @@ import mario from "./mario.png";
 import cv from './cv.png'
 import internet from './internet.png'
 import pfolio1 from './pfolio1.gif'
+import wfc from './wfcvid.gif'
+import mariogif from './mariovid.gif'
+import express from "./expressjs.webp"
 
 export {
   logoo,
@@ -71,5 +74,8 @@ export {
   // pfolio,
   cv,
   internet,
-  pfolio1
+  pfolio1,
+  wfc,
+  mariogif,
+  express
 };
