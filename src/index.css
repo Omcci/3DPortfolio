@@ -126,7 +126,7 @@
 
 .transform{ 
   transform-style: preserve-3d;
-  perspective: 4000px;
+  perspective: 2000px;
 }
 
 .texttransform {

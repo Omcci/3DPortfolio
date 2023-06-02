@@ -33,7 +33,6 @@ import prog from "./prog.png";
 import mario from "./mario.png";
 // import pfolio from "./pfolio.png";
 
-import cv from './cv.png'
 import internet from './internet.png'
 import pfolio1 from './pfolio1.gif'
 import wfc from './wfcvid.gif'
@@ -72,7 +71,6 @@ export {
   prog,
   mario,
   // pfolio,
-  cv,
   internet,
   pfolio1,
   wfc,

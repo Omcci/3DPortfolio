@@ -65,6 +65,10 @@ import {
       title: "Express",
       icon: express,
     },
+    {
+      title: "NodeJS",
+      icon: nodejs,
+    },
   ];
   
   const technologies = [

@@ -90,11 +90,8 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          À travers ces projets, je me suis confronté à des problèmes complexes,
-          j'ai pu exploré de nouvelles technologies, de nouveaux outils. Ces
-          projets ont été effectués pour certains en groupe et d'autres seul. En
-          cliquant sur le logo Github sur les cartes, vous aurez un aperçu du
-          travail effectué. N'hésitez pas à jeter un oeil sur les repo !
+         Ici, j'ai selectionné les projets dont je suis le plus fier et qui attestent de ma 
+         progression dans le métier de dev'. N'hésites pas à jeter un coup d'oeil :)
         </motion.p>
       </div>
 

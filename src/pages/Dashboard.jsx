@@ -1,19 +1,12 @@
 import { Link, useNavigate } from "react-router-dom";
-import cv from "../../public/cv/CVfin.pdf";
+import cv from "../assets/cv.png";
 import ba from "../assets/backarrow.png";
 import { StarsCanvas } from "../components";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
-import { Document, Page } from "react-pdf";
-import { useState } from "react";
+
 
 function Dashboard() {
-  const [numPages, setNumPages] = useState(null)
-  const [pageNumber, setPageNumber] = useState(1)
-
-  const onDocumentLoadSuccess = () => {
-    setNumPages(numPages)
-  }
   const nav = useNavigate();
 
   const handleNav = () => {
@@ -21,10 +14,8 @@ function Dashboard() {
   };
 
   return (
-    <div>
-      <div className="flex justify-center items-center m-12 ">
-        <StarsCanvas />
-        <div className="relative">
+    <div className="flex flex-row flex-wrap items-center justify-center">
+      {/* <div className="relative">
           <Link to="/" onClick={handleNav}>
             <img
               src={ba}
@@ -32,27 +23,52 @@ function Dashboard() {
               className="w-16 hover:scale-150 ease-in duration-300"
             />
           </Link>
+        </div> */}
+      <div className="flex flex-row xl:flex-col w-full flex-wrap items-center justify-center">
+        <div className="flex flex-row">
+          <Link to="/" onClick={handleNav}>
+            <div className="green-pink-gradient mr-10 mt-5 p-[1px] rounded-[20px] shadow-card">
+              <div className="bg-tertiary  rounded-[20px]  h-[40px] w-[40px] flex justify-evenly items-center flex-col">
+                <h3 className="text-white text-[20px] font-bold text-center">
+                  <a
+                    href="https://github.com/Omcci"
+                    className="cursor-pointer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    ⬅
+                  </a>
+                </h3>
+              </div>
+            </div>
+          </Link>
+
+          <div className="green-pink-gradient mt-5 p-[1px] rounded-[20px] shadow-card">
+            <div className="bg-tertiary  rounded-[20px] py-5 h-[40px] w-[150px] flex justify-evenly items-center flex-col">
+              <h3 className="text-white text-[20px] font-bold text-center">
+                <a
+                  href={`cv/OmarMelloulchiCV.pdf`}
+                  className="cursor-pointer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Télécharger
+                </a>
+              </h3>
+            </div>
+          </div>
         </div>
+
+        {/* <div className="flex justify-center items-center m-12 ">
+        </div> */}
+
+        <StarsCanvas />
+
         <motion.div
           variants={fadeIn("right", "spring", 0.5, 0.5)}
-          className="green-pink-gradient p-[1px] rounded-[20px] shadow-card m-5 sm:m-20 "
+          className="green-pink-gradient p-[1px] rounded-[20px] shadow-card m-5 sm:m-20"
         >
-          {/* <Document file={cv}   onLoadSuccess={() => console.log('PDF loaded successfully')}
-  onLoadError={(error) => console.log('PDF loading error:', error)} /> */}
-          <iframe
-  src={cv}
-  type="application/pdf"
-  width="100%"
-  style={{ height: "57vh"} }
-  frameBorder="0"
-  title="This iframe displays an PDF file"
- 
-/>
-          {/* <Document file={cv} onLoadSuccess={onDocumentLoadSuccess} >
-            <Page pageNumber={pageNumber}/>
-          </Document> */}
-
-          {/* <img src={cv} alt="CvOmar" className="bg-auto rounded-[20px] sm:bg-contain" /> */}
+          <img src={cv} alt="CvOmar" className="xl:h-[700px] rounded-[20px]" />
         </motion.div>
       </div>
     </div>
