@@ -1,8 +1,8 @@
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { github } from "../assets";
-import { internet } from "../assets"
+import { github, mvid } from "../assets";
+import { internet } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -15,7 +15,7 @@ const ProjectCard = ({
   image,
   pfolio1,
   source_code_link,
-  deployedproject
+  deployedproject,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 1)}>
@@ -29,11 +29,22 @@ const ProjectCard = ({
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full transform"
       >
         <div className="relative w-full h-[200px] transform ">
-          <img
+          {/* <img
             src={image}
             alt={name}
             className="w-[80%] h-[100%] object-cover rounded-2xl texttransform"
-          />
+          /> */}
+          <video 
+            src={image} 
+            type="video/webm" 
+            autoPlay 
+            loop 
+            muted 
+            playsinline
+            className="w-[80%] h-[100%] object-cover rounded-2xl texttransform"/>
+            
+            {/* <source src="my-animation.mp4" type="video/mp4" /> */}
+          
           <div className="absolute top-0 right-0 flex justify-end m-3 card-img_hover texttransform">
             <div
               onClick={() => window.open(source_code_link, "_blank")}
@@ -59,7 +70,7 @@ const ProjectCard = ({
             </div>
           </div>
         </div>
-        <div className="mt-5">
+        <div className="mt-5 ">
           {/* <div className="mt-5 texttransform"> */}
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
           <p className="text-secondary mt-2 text-[14px]">{description}</p>
@@ -90,8 +101,9 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-         Ici, j'ai selectionné les projets dont je suis le plus fier et qui attestent de ma 
-         progression dans le métier de dev'. N'hésites pas à jeter un coup d'oeil :)
+          Ici, j'ai selectionné les projets dont je suis le plus fier et qui
+          attestent de ma progression dans le métier de dev'. N'hésites pas à
+          jeter un coup d'oeil :)
         </motion.p>
       </div>
 

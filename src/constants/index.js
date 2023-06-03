@@ -30,7 +30,10 @@ import {
     // pfolio,
     pfolio1,
     creator,
-    express
+    express,
+    mvid,
+    Pfolio,
+    WFC
   } from "../assets";
   
   export const navLinks = [
@@ -228,7 +231,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: wfc,
+      image: WFC,
       source_code_link: "https://github.com/Omcci/WCS-Projet2",
       deployedproject: "https://wildfitnessclub.netlify.app",
     },
@@ -250,7 +253,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: mariogif,
+      image: mvid,
       source_code_link: "https://github.com/T0MLE/WCS-project1",
       deployedproject: "https://t0mle.github.io/WCS-project1/",
     },
@@ -272,7 +275,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: pfolio1,
+      image: Pfolio,
       source_code_link: "https://github.com/Omcci/3DPortfolio",
       deployedproject: "https://omci-portfolio.netlify.app",
     },

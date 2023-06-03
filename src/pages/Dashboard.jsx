@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import cv from "../assets/cv.png";
+import cv from "../assets/OmarMelloulchiCV.png";
 import ba from "../assets/backarrow.png";
 import { StarsCanvas } from "../components";
 import { motion } from "framer-motion";

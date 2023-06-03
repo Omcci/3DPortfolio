@@ -2,12 +2,12 @@ import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
+// import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-import { Canvas } from "@react-three/fiber";
+// import { Canvas } from "@react-three/fiber";
 
-import { fromHalfFloat } from "three/src/extras/DataUtils";
+// import { fromHalfFloat } from "three/src/extras/DataUtils";
 
 //template_fwm2gdw
 // service_l8nwy68
@@ -73,7 +73,10 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Discutons</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <p className={styles.sectionSubText}>Melloulchi.omar@gmail.com</p>
+        <p className={styles.sectionSubText}>0670499728</p>
 
+        {/* 
         <form
           ref={formRef}
           onSubmit={handleSubmit}
@@ -119,7 +122,7 @@ const Contact = () => {
           >
             {loading ? "Envoi ..." : "Envoyer"}
           </button>
-        </form>
+        </form> */}
       </motion.div>
 
       <motion.div

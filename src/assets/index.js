@@ -38,6 +38,9 @@ import pfolio1 from './pfolio1.gif'
 import wfc from './wfcvid.gif'
 import mariogif from './mariovid.gif'
 import express from "./expressjs.webp"
+import mvid from "./mvid.webm"
+import WFC from "./WFC.webm"
+import Pfolio from "./Pfolio.webm"
 
 export {
   logoo,
@@ -75,5 +78,8 @@ export {
   pfolio1,
   wfc,
   mariogif,
-  express
+  express,
+  mvid,
+  Pfolio,
+  WFC,
 };
