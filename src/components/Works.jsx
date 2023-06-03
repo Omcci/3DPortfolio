@@ -13,7 +13,6 @@ const ProjectCard = ({
   description,
   tags,
   image,
-  pfolio1,
   source_code_link,
   deployedproject,
 }) => {

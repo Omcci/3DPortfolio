@@ -1,6 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import cv from "../assets/OmarMelloulchiCV.png";
-import ba from "../assets/backarrow.png";
+import cv from "../assets/CVOmarMelloulchi.png";
 import { StarsCanvas } from "../components";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
@@ -47,7 +46,7 @@ function Dashboard() {
             <div className="bg-tertiary  rounded-[20px] py-5 h-[40px] w-[150px] flex justify-evenly items-center flex-col">
               <h3 className="text-white text-[20px] font-bold text-center">
                 <a
-                  href={`cv/OmarMelloulchiCV.pdf`}
+                  href={`cv/CVOmarMelloulchi.pdf`}
                   className="cursor-pointer"
                   target="_blank"
                   rel="noopener noreferrer"

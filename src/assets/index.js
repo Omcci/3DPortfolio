@@ -41,6 +41,7 @@ import express from "./expressjs.webp"
 import mvid from "./mvid.webm"
 import WFC from "./WFC.webm"
 import Pfolio from "./Pfolio.webm"
+import cv from "./CVOmarMelloulchi.png"
 
 export {
   logoo,
@@ -82,4 +83,5 @@ export {
   mvid,
   Pfolio,
   WFC,
+  cv
 };
