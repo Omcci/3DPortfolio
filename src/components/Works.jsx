@@ -46,7 +46,6 @@ const ProjectCard = ({
               autoPlay
               loop
               muted
-              playsInLine
               src={vidmp4}
               type="video/mp4"
             />
