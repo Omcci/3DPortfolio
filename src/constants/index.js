@@ -33,7 +33,10 @@ import {
     express,
     mvid,
     Pfolio,
-    WFC
+    WFC,
+    WFCmp4,
+    pfoliomp4,
+    Mariomp4
   } from "../assets";
   
   export const navLinks = [
@@ -231,6 +234,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
+      vidmp4: WFCmp4,
       image: WFC,
       source_code_link: "https://github.com/Omcci/WCS-Projet2",
       deployedproject: "https://wildfitnessclub.netlify.app",
@@ -253,6 +257,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
+      vidmp4:Mariomp4,
       image: mvid,
       source_code_link: "https://github.com/T0MLE/WCS-project1",
       deployedproject: "https://t0mle.github.io/WCS-project1/",
@@ -275,6 +280,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
+      vidmp4:pfoliomp4,
       image: Pfolio,
       source_code_link: "https://github.com/Omcci/3DPortfolio",
       deployedproject: "https://omci-portfolio.netlify.app",

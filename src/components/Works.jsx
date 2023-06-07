@@ -13,6 +13,7 @@ const ProjectCard = ({
   description,
   tags,
   image,
+  vidmp4,
   source_code_link,
   deployedproject,
 }) => {
@@ -34,13 +35,18 @@ const ProjectCard = ({
             className="w-[80%] h-[100%] object-cover rounded-2xl texttransform"
           /> */}
           <video 
-            src={image} 
-            type="video/webm" 
             autoPlay 
             loop 
             muted 
-            playsinline
-            className="w-[80%] h-[100%] object-cover rounded-2xl texttransform"/>
+            playsInLine
+            className="w-[80%] h-[100%] object-cover rounded-2xl texttransform">
+              <source 
+              src={image} 
+              type="video/webm" />
+              <source 
+              src={vidmp4} 
+              type="video/mp4" />
+            </video>
             
             {/* <source src="my-animation.mp4" type="video/mp4" /> */}
           
