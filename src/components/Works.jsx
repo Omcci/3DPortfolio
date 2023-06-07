@@ -35,7 +35,7 @@ const ProjectCard = ({
             className="w-[80%] h-[100%] object-cover rounded-2xl texttransform"
           /> */}
           <video
-            autoPlay
+            autoPlay={true}
             loop
             muted
             controls = ''
