@@ -38,12 +38,12 @@ const ProjectCard = ({
             autoPlay
             loop
             muted
+            controls = ''
             // playsInLine
             className="w-[80%] h-[100%] object-cover rounded-2xl texttransform"
           >
             <source src={image} type="video/webm" />
             <source
-            autoPlay
               src={vidmp4}
               type="video/mp4"
             />
