@@ -34,22 +34,26 @@ const ProjectCard = ({
             alt={name}
             className="w-[80%] h-[100%] object-cover rounded-2xl texttransform"
           /> */}
-          <video 
-            autoPlay 
-            loop 
-            muted 
+          <video
+            autoPlay
+            loop
+            muted
             playsInLine
-            className="w-[80%] h-[100%] object-cover rounded-2xl texttransform">
-              <source 
-              src={image} 
-              type="video/webm" />
-              <source autoPlay
-              src={vidmp4} 
-              type="video/mp4" />
-            </video>
-            
-            {/* <source src="my-animation.mp4" type="video/mp4" /> */}
-          
+            className="w-[80%] h-[100%] object-cover rounded-2xl texttransform"
+          >
+            <source src={image} type="video/webm" />
+            <source
+              autoPlay
+              loop
+              muted
+              playsInLine
+              src={vidmp4}
+              type="video/mp4"
+            />
+          </video>
+
+          {/* <source src="my-animation.mp4" type="video/mp4" /> */}
+
           <div className="absolute top-0 right-0 flex justify-end m-3 card-img_hover texttransform">
             <div
               onClick={() => window.open(source_code_link, "_blank")}
