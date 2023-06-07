@@ -43,7 +43,7 @@ const ProjectCard = ({
               <source 
               src={image} 
               type="video/webm" />
-              <source 
+              <source autoPlay
               src={vidmp4} 
               type="video/mp4" />
             </video>
