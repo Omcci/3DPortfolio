@@ -38,7 +38,7 @@ const ProjectCard = ({
             autoPlay={true}
             loop
             muted
-            controls = ''
+            controls={""}
             // playsInLine
             className="w-[80%] h-[100%] object-cover rounded-2xl texttransform"
           >
