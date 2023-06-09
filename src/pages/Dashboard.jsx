@@ -1,9 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import cv from "../assets/CVOmarMelloulchi.png";
 import { StarsCanvas } from "../components";
-import { motion } from "framer-motion";
-import { fadeIn } from "../utils/motion";
-
 
 function Dashboard() {
   const nav = useNavigate();
@@ -14,15 +11,6 @@ function Dashboard() {
 
   return (
     <div className="flex flex-row flex-wrap items-center justify-center">
-      {/* <div className="relative">
-          <Link to="/" onClick={handleNav}>
-            <img
-              src={ba}
-              alt="backarrow"
-              className="w-16 hover:scale-150 ease-in duration-300"
-            />
-          </Link>
-        </div> */}
       <div className="flex flex-row xl:flex-col w-full flex-wrap items-center justify-center">
         <div className="flex flex-row">
           <Link to="/" onClick={handleNav}>
@@ -62,13 +50,23 @@ function Dashboard() {
         </div> */}
 
         <StarsCanvas />
-
-        <motion.div
-          variants={fadeIn("right", "spring", 0.5, 0.5)}
-          className="green-pink-gradient p-[1px] rounded-[20px] shadow-card m-5 sm:m-20"
-        >
-          <img src={cv} alt="CvOmar" className="xl:h-[700px] rounded-[20px]" />
-        </motion.div>
+        <div className="flex flex-row">
+          {/* <div className="flex justify-start items-start w-[500px] h-[700px] rounded-[20px] bg-white sm:m-20">
+            <div className="bg-black w-[150px] h-[150px] m-10" >
+          Image
+            </div>
+            <div className=" w-full h-full bg-green-950" >
+         
+            </div>
+          </div> */}
+          <div className="green-pink-gradient p-[1px] rounded-[20px] shadow-card m-5 sm:m-20">
+            <img
+              src={cv}
+              alt="CvOmar"
+              className="xl:h-[700px] rounded-[20px]"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
