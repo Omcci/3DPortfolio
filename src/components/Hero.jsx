@@ -34,7 +34,7 @@ const Hero = ({buttonHero}) => {
 
   return (
     <section className="mt-20 relative flex flex-col justify-start items-center w-full h-screen mx-auto">
-       <div className="absolute bottom-0">
+       <div className="absolute bottom-0 lg:mt-[200px] ">
           <img classname="z-1" src={mountain} alt="mountain" />
       </div>
 
@@ -66,15 +66,15 @@ const Hero = ({buttonHero}) => {
           {/* <div className="w-5 h-5 rounded-full bg-[#9F2042] parallax" data-speed="0.3" />
         <div className="w-1 sm:h-80 h-40 red-gradient parallax" data-speed="0.5" /> */}
 
-          <div>
+          <div className="" >
             <h1
-              className={`${styles.heroHeadText} text-white parallax mb-10`}
+              className={`${styles.heroHeadText} text-white parallax mb-10 lg:mx-[200px] xl:mx-[300px] `}
               data-speed="0.2"
             >
               Hey, moi c'est <span className="text-[#9F2042]">Omar</span>
             </h1>
             <p
-              className={`  text-[24px]  mt-2  parallax`}
+              className={`   mt-2 xl:mx-[300px] lg:mx-[200px] xs:text-[16px]  sm:text-[16px] md:text-[24px] parallax`}
               data-speed="0.4"
             >
               Je développe des applications web et je suis actuellement en
@@ -82,9 +82,7 @@ const Hero = ({buttonHero}) => {
               recherche active d'une alternance pour un poste de Développeur Web
               Frontend ou Fullstack à compter de Septembre 2023.
             </p>
-            <div className="flex mt-10 justify-center items-center">
-              <div className=""></div>
-            </div>
+            
           </div>
         </div>
       {/* </div> */}
