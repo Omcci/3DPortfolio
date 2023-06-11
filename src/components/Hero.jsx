@@ -34,7 +34,7 @@ const Hero = ({buttonHero}) => {
 
   return (
     <section className="mt-20 relative flex flex-col justify-start items-center w-full h-screen mx-auto">
-       <div className="absolute bottom-0 lg:mt-[200px] ">
+       <div className="absolute bottom-0 lg:mt-[200px] w-full">
           <img classname="z-1" src={mountain} alt="mountain" />
       </div>
 
