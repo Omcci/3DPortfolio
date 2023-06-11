@@ -12,6 +12,7 @@ import {
   EarthCanvas,
 } from "../components";
 import { Canvas } from "@react-three/fiber";
+import { buttonHero } from "../constants";
 
 const App = () => {
   return (
@@ -21,7 +22,7 @@ const App = () => {
         <div className=" bg-cover bg-no-repeat bg-center">
           <Navbar />
           <div className="relative z-0">
-            <Hero />
+            <Hero buttonHero={buttonHero}/>
             <StarsCanvas />
           </div>
         </div>

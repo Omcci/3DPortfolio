@@ -109,7 +109,7 @@ const Works = () => {
         >
           Ici, j'ai selectionné les projets dont je suis le plus fier et qui
           attestent de ma progression dans le métier de dev'. N'hésites pas à
-          jeter un coup d'oeil :)
+          jeter un coup d'oeil.
         </motion.p>
       </div>
 

@@ -286,5 +286,21 @@ import {
       deployedproject: "https://omci-portfolio.netlify.app",
     },
   ];
+
+   const buttonHero = [
+    {
+      title: "Mon CV",
+      url: "https://omci-portfolio.netlify.app/dashboard",
+    },
+    {
+      title: "LinkedIn",
+      url: "https://www.linkedin.com/in/omarmelloulchi/",
+    },
+    {
+      title: "Github",
+      url: "https://github.com/Omcci/",
+    },
+  ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  
+  export { services, technologies, experiences, testimonials, projects, buttonHero };
