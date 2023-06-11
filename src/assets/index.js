@@ -46,6 +46,7 @@ import WFCmp4 from "./WFC.mp4"
 import Mariomp4 from "./mvid.mp4"
 import pfoliomp4 from "./Pfolio.mp4"
 import mountain from "./mountains-front.png"
+import moon from "./moon.png"
 
 export {
   logoo,
@@ -91,5 +92,6 @@ export {
   WFCmp4,
   Mariomp4,
   pfoliomp4,
-  mountain
+  mountain,
+  moon
 };

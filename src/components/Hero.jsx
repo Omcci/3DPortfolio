@@ -5,6 +5,7 @@ import lkdn from "../assets/lkdn.png";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import mountain from "../assets/mountains-front.png";
+import { moon } from "../assets";
 // import { buttonHero } from "../constants";
 // import { ComputersCanvas } from "./canvas";
 
@@ -34,8 +35,9 @@ const Hero = ({buttonHero}) => {
 
   return (
     <section className="mt-20 relative flex flex-col justify-start items-center w-full h-screen xl:h-[140vh] mx-auto">
-       <div className="absolute bottom-0 lg:mt-[200px] mt-[200px] w-full">
-          <img classname="z-1 " src={mountain} alt="mountain" />
+      <img src={moon} alt="moon" className=" h-[150px] md:h-[200px] lg:h-[300px] absolute top-[50%] right-[20%] parallax " data-speed="-0.2"/>
+       <div className="absolute bottom-0 lg:mt-[200px] mt-[200px] w-full " >
+          <img classname="z-1 "  src={mountain} alt="mountain" />
       </div>
 
       <div
