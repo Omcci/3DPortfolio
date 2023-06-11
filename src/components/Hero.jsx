@@ -33,9 +33,9 @@ const Hero = ({buttonHero}) => {
   }, [scrollY]);
 
   return (
-    <section className="mt-20 relative flex flex-col justify-start items-center w-full h-screen mx-auto">
-       <div className="absolute bottom-0 lg:mt-[200px] w-full">
-          <img classname="z-1" src={mountain} alt="mountain" />
+    <section className="mt-20 relative flex flex-col justify-start items-center w-full h-screen xl:h-[140vh] mx-auto">
+       <div className="absolute bottom-0 lg:mt-[200px] mt-[200px] w-full">
+          <img classname="z-1 " src={mountain} alt="mountain" />
       </div>
 
       <div
@@ -74,7 +74,7 @@ const Hero = ({buttonHero}) => {
               Hey, moi c'est <span className="text-[#9F2042]">Omar</span>
             </h1>
             <p
-              className={`   mt-2 xl:mx-[300px] lg:mx-[200px] xs:text-[16px]  sm:text-[16px] md:text-[24px] parallax`}
+              className={`  text-[#dfd9ff] mt-2 xl:mx-[300px] lg:mx-[200px] xs:text-[16px]  sm:text-[16px] md:text-[24px] parallax`}
               data-speed="0.4"
             >
               Je développe des applications web et je suis actuellement en
