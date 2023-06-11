@@ -98,7 +98,14 @@ const Hero = ({buttonHero}) => {
       >
         <div className="bg-tertiary  rounded-[20px] py-5 h-[40px] w-[140px] flex justify-evenly items-center flex-col">
           <h3 className="text-white text-[20px] font-bold text-center">
-            <a
+            {index === 0 ? <Link to="/dashboard"><a
+              href={button.url}
+              className="cursor-pointer"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {button.title}
+            </a> </Link> : <a
               href={button.url}
               className="cursor-pointer"
               target="_blank"
@@ -106,6 +113,8 @@ const Hero = ({buttonHero}) => {
             >
               {button.title}
             </a>
+            }
+           
           </h3>
         </div>
       </div>
