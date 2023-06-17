@@ -47,6 +47,8 @@ import Mariomp4 from "./mvid.mp4"
 import pfoliomp4 from "./Pfolio.mp4"
 import mountain from "./mountains-front.png"
 import moon from "./moon.png"
+import hbetsmp4 from "./hbets.mp4"
+import hbetswebm from "./hbets.webm"
 
 export {
   logoo,
@@ -93,5 +95,7 @@ export {
   Mariomp4,
   pfoliomp4,
   mountain,
-  moon
+  moon,
+  hbetsmp4,
+  hbetswebm
 };
