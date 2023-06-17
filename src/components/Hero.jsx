@@ -9,7 +9,7 @@ import { moon } from "../assets";
 // import { buttonHero } from "../constants";
 // import { ComputersCanvas } from "./canvas";
 
-const Hero = ({buttonHero}) => {
+const Hero = ({ buttonHero }) => {
   const { scrollY } = useScroll();
 
   useEffect(() => {
@@ -35,9 +35,14 @@ const Hero = ({buttonHero}) => {
 
   return (
     <section className="mt-20 relative flex flex-col justify-start items-center w-full h-screen xl:h-[140vh] mx-auto">
-      <img src={moon} alt="moon" className=" h-[150px] md:h-[200px] lg:h-[300px] absolute top-[50%] right-[20%] parallax " data-speed="-0.2"/>
-       <div className="absolute bottom-0 lg:mt-[200px] mt-[200px] w-full " >
-          <img classname="z-1 "  src={mountain} alt="mountain" />
+      <img
+        src={moon}
+        alt="moon"
+        className=" h-[150px] md:h-[200px] lg:h-[300px] absolute top-[50%] right-[20%] parallax "
+        data-speed="-0.2"
+      />
+      <div className="absolute bottom-0 lg:mt-[200px] mt-[200px] w-full 2xl:hidden ">
+        <img classname="z-1 " src={mountain} alt="mountain" />
       </div>
 
       <div
@@ -65,63 +70,66 @@ const Hero = ({buttonHero}) => {
         {/* <div
           className={`${styles.paddingX} mt-10 inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
         > */}
-          {/* <div className="w-5 h-5 rounded-full bg-[#9F2042] parallax" data-speed="0.3" />
+        {/* <div className="w-5 h-5 rounded-full bg-[#9F2042] parallax" data-speed="0.3" />
         <div className="w-1 sm:h-80 h-40 red-gradient parallax" data-speed="0.5" /> */}
 
-          <div className="" >
-            <h1
-              className={`${styles.heroHeadText} text-white parallax mb-10 lg:mx-[200px] xl:mx-[300px] `}
-              data-speed="0.2"
-            >
-              Hey, moi c'est <span className="text-[#9F2042]">Omar</span>
-            </h1>
-            <p
-              className={`  text-[#dfd9ff] mt-2 xl:mx-[300px] lg:mx-[200px] xs:text-[16px]  sm:text-[16px] md:text-[24px] parallax`}
-              data-speed="0.4"
-            >
-              Je développe des applications web et je suis actuellement en
-              formation au bootcamp de Wild Code School à Paris. Je suis en
-              recherche active d'une alternance pour un poste de Développeur Web
-              Frontend ou Fullstack à compter de Septembre 2023.
-            </p>
-            
-          </div>
+        <div className="">
+          <h1
+            className={`${styles.heroHeadText} text-white parallax mb-10 lg:mx-[200px] xl:mx-[300px] `}
+            data-speed="0.2"
+          >
+            Hey, moi c'est <span className="text-[#9F2042]">Omar</span>
+          </h1>
+          <p
+            className={`  text-[#dfd9ff] mt-2 xl:mx-[300px] lg:mx-[200px] xs:text-[16px]  sm:text-[16px] md:text-[24px] parallax`}
+            data-speed="0.4"
+          >
+            Je développe des applications web et je suis actuellement en
+            formation au bootcamp de Wild Code School à Paris. Je suis en
+            recherche active d'une alternance pour un poste de Développeur Web
+            Frontend ou Fullstack à compter de Septembre 2023.
+          </p>
         </div>
+      </div>
       {/* </div> */}
       {buttonHero.map((button, index) => {
         return (
-        <div
-        className="green-pink-gradient mt-5 p-[1px] rounded-[20px] shadow-card parallax"
-        data-speed="0.6"
-        key={`button-${index}`}
-        index={index}
-      >
-        <div className="bg-tertiary  rounded-[20px] py-5 h-[40px] w-[140px] flex justify-evenly items-center flex-col">
-          <h3 className="text-white text-[20px] font-bold text-center">
-            {index === 0 ? <Link to="/dashboard"><a
-              href={button.url}
-              className="cursor-pointer"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {button.title}
-            </a> </Link> : <a
-              href={button.url}
-              className="cursor-pointer"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {button.title}
-            </a>
-            }
-           
-          </h3>
-        </div>
-      </div>
-        )
+          <div
+            className="green-pink-gradient mt-5 p-[1px] rounded-[20px] shadow-card parallax"
+            data-speed="0.6"
+            key={`button-${index}`}
+            index={index}
+          >
+            <div className="bg-tertiary  rounded-[20px] py-5 h-[40px] w-[140px] flex justify-evenly items-center flex-col">
+              <h3 className="text-white text-[20px] font-bold text-center">
+                {index === 0 ? (
+                  <Link to="/dashboard">
+                    <a
+                      href={button.url}
+                      className="cursor-pointer"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {button.title}
+                    </a>{" "}
+                  </Link>
+                ) : (
+                  <a
+                    href={button.url}
+                    className="cursor-pointer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {button.title}
+                  </a>
+                )}
+              </h3>
+            </div>
+          </div>
+        );
       })}
 
-       {/* <div className="absolute z-0">
+      {/* <div className="absolute z-0">
           <img src={mountain} alt="mountain" />
       </div> */}
 
@@ -174,7 +182,7 @@ const Hero = ({buttonHero}) => {
           </h3>
         </div>
       </div> */}
-     
+
       {/* <ComputersCanvas /> */}
       {/* <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">

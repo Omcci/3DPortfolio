@@ -22,7 +22,7 @@ const Navbar = () => {
       bg-primary
       `}
     >
-      <div className="w-full flex justify-between items-center max-w-7x1 mx-auto">
+      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -86,3 +86,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
