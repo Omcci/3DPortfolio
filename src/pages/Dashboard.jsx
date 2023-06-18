@@ -153,7 +153,7 @@ function Dashboard() {
                     d'un site CV via HTML / CSS / JS
                   </p>
                 </div>
-                <div className=" w-[400px] h-[300px] mt-10  rounded-xl  bg-blue-500 bg-opacity-5">
+                <div className=" w-[400px] h-[340px] mt-10  rounded-xl  bg-blue-500 bg-opacity-5">
                   {" "}
                   <h1 class="m-3 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-3xl dark:text-white">
                     FORMATION

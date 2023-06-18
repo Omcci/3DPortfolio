@@ -73,14 +73,16 @@ const Hero = ({ buttonHero }) => {
         {/* <div className="w-5 h-5 rounded-full bg-[#9F2042] parallax" data-speed="0.3" />
         <div className="w-1 sm:h-80 h-40 red-gradient parallax" data-speed="0.5" /> */}
 
-        <div className="">
+        <div className="flex flex-col justify-center items-center mt-20">
           <h1
             className={`${styles.heroHeadText} text-white parallax mb-10 lg:mx-[200px] xl:mx-[300px] `}
             data-speed="0.2"
           >
-            Hey, moi c'est <span className="text-[#9F2042]">Omar</span>
+            Omci
           </h1>
-          <p
+          <span className=" text-blue-500 opacity-60 text-5xl font-extrabold">Dev' Web</span>
+          <span className=" text-blue-500 opacity-60 text-5xl font-extrabold">Full-stack</span>
+          {/* <p
             className={`  text-[#dfd9ff] mt-2 xl:mx-[300px] lg:mx-[200px] xs:text-[16px]  sm:text-[16px] md:text-[24px] parallax`}
             data-speed="0.4"
           >
@@ -88,7 +90,7 @@ const Hero = ({ buttonHero }) => {
             formation au bootcamp de Wild Code School à Paris. Je suis en
             recherche active d'une alternance pour un poste de Développeur Web
             Frontend ou Fullstack à compter de Septembre 2023.
-          </p>
+          </p> */}
         </div>
       </div>
       {/* </div> */}
