@@ -49,6 +49,7 @@ import mountain from "./mountains-front.png"
 import moon from "./moon.png"
 import hbetsmp4 from "./hbets.mp4"
 import hbetswebm from "./hbets.webm"
+import sass from "./sass.png"
 
 export {
   logoo,
@@ -97,5 +98,6 @@ export {
   mountain,
   moon,
   hbetsmp4,
-  hbetswebm
+  hbetswebm,
+  sass
 };

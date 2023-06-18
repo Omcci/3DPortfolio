@@ -39,6 +39,7 @@ import {
   Mariomp4,
   hbetsmp4,
   hbetswebm,
+  sass
 } from "../assets";
 
 export const navLinks = [
@@ -66,16 +67,20 @@ const services = [
     icon: javascript,
   },
   {
-    title: "TailwindCSS",
-    icon: tailwind,
-  },
-  {
     title: "Express",
     icon: express,
   },
   {
     title: "NodeJS",
     icon: nodejs,
+  },
+  {
+    title: "Sass",
+    icon: sass,
+  },
+  {
+    title: "TailwindCSS",
+    icon: tailwind,
   },
 ];
 
