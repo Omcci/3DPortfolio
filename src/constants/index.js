@@ -241,7 +241,7 @@ const projects = [
     deployedproject: "https://wildfitnessclub.netlify.app",
   },
   {
-    name: "Hubert Eats",
+    name: "Food Recipe App",
     description:
       "Ce projet est réalisé dans le cadre d'un test technique pour une entreprise. La contrainte de temps imposée fut de 5jours. L'application permet d'afficher des recettes, d'en ajouter à un menu personnalisé. Il est également possible de réorganiser ses menus dans une page dédiée. Ce projet est réalisé en bi-repo avec React en front et Node en back.",
     tags: [
