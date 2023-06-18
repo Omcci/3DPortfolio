@@ -50,6 +50,8 @@ import moon from "./moon.png"
 import hbetsmp4 from "./hbets.mp4"
 import hbetswebm from "./hbets.webm"
 import sass from "./sass.png"
+import pfolioimg from "./pfolioimg.jpg"
+
 
 export {
   logoo,
@@ -99,5 +101,6 @@ export {
   moon,
   hbetsmp4,
   hbetswebm,
-  sass
+  sass,
+  pfolioimg
 };
