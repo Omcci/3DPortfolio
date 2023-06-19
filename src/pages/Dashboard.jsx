@@ -4,16 +4,33 @@ import { StarsCanvas } from "../components";
 import { pfolioimg } from "../assets";
 import Draggable from "react-draggable";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 function Dashboard() {
-  const [currentPosition, setCurrentPosition] = useState({
-    xRate: 150,
-    yRate: 150,
-  });
+  // const [currentPosition, setCurrentPosition] = useState({
+  //   xRate: 150,
+  //   yRate: 150,
+  // });
 
-  const onDrag = (e, data) => {
-    setCurrentPosition({ xRate: data.lastX, yRate: data.lastY });
+  // const onDrag = (e, data) => {
+  //   setCurrentPosition({ xRate: data.lastX, yRate: data.lastY });
+  // };
+
+  const cardVariants = {
+    offscreen: {
+      y: 300,
+    },
+    onscreen: {
+      y: 0,
+      
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 0.8,
+      },
+    },
   };
+
   const nav = useNavigate();
 
   const handleNav = () => {
@@ -21,7 +38,7 @@ function Dashboard() {
   };
 
   return (
-    <div>
+    <div className="container mx-auto">
       {" "}
       <StarsCanvas />
       <div className="flex flex-row flex-wrap items-center justify-center">
@@ -73,9 +90,9 @@ function Dashboard() {
                   }}
                   onDrag={onDrag}
                 > */}
-                  <div className=" w-[260px] h-[200px] bg-opacity-5 rounded bg-clip-padding backdrop-filter handle">
-                    <img className="rounded-xl " src={pfolioimg} alt="" />
-                  </div>
+                <div className=" w-[260px] h-[200px] bg-opacity-5 rounded bg-clip-padding backdrop-filter handle">
+                  <img className="rounded-xl " src={pfolioimg} alt="" />
+                </div>
                 {/* </Draggable>
                 <Draggable
                   position={{
@@ -84,44 +101,58 @@ function Dashboard() {
                   }}
                   onDrag={onDrag}
                 > */}
-                  <div className="w-[260px] mt-10 rounded-xl h-[650px]  bg-blue-500 bg-opacity-5 bg-clip-padding backdrop-filter">
-                    <p class="mt-4 mx-10 text-md font-extrabold "> LANGUES </p>
-                    <p class="m-4  ">
-                      <ul>
-                        <li>Français - Langue maternelle </li>
-                        <li>Anglais - C2</li>
-                      </ul>{" "}
-                    </p>
-                    <p class="mx-10 text-md font-extrabold "> COMPETENCES</p>
-                    <p class="m-4  ">
-                      <ul>
-                        <li>React</li>
-                        <li>Javascript</li>
-                        <li>NodeJS</li>
-                        <li>Express</li>
-                        <li>MySQL</li>
-                        <li>HTML / CSS</li>
-                        <li>Scrum/Agile</li>
-                      </ul>
-                    </p>
-                    <p class="mx-10 text-md font-extrabold "> SOFT SKILLS </p>
-                    <p class="m-4  ">
-                      <ul>
-                        <li>Maîtrise de soi</li>
-                        <li>Esprit d'équipe</li>
-                        <li>Autonomie</li>
-                      </ul>
-                    </p>
-                    <p class="mx-10 text-md font-extrabold "> HOBBIES </p>
-                    <p class="m-4  ">
-                      <ul>
-                        <li>Sports</li>
-                        <li>Jeux-vidéo</li>
-                        <li>Cinéphile</li>
-                        <li>Caféphile</li>
-                      </ul>
-                    </p>
-                  </div>
+                <motion.div
+                  
+                  initial="offscreen"
+                  animate="onscreen"
+                  transition={{
+                    type: "spring",
+                    bounce: 0.4,
+                    duration: 0.8,
+                  }}
+                  className="w-[260px] mt-10 rounded-xl h-[650px]  bg-blue-500 bg-opacity-5 bg-clip-padding backdrop-filter"
+                >
+                  <motion.div className="card" variants={cardVariants}>
+
+
+                  <p class="mt-4 mx-10 text-md font-extrabold "> LANGUES </p>
+                  <p class="m-4  ">
+                    <ul>
+                      <li>Français - Langue maternelle </li>
+                      <li>Anglais - C2</li>
+                    </ul>{" "}
+                  </p>
+                  <p class="mx-10 text-md font-extrabold "> COMPETENCES</p>
+                  <p class="m-4  ">
+                    <ul>
+                      <li>React</li>
+                      <li>Javascript</li>
+                      <li>NodeJS</li>
+                      <li>Express</li>
+                      <li>MySQL</li>
+                      <li>HTML / CSS</li>
+                      <li>Scrum/Agile</li>
+                    </ul>
+                  </p>
+                  </motion.div>
+                  <p class="mx-10 text-md font-extrabold "> SOFT SKILLS </p>
+                  <p class="m-4  ">
+                    <ul>
+                      <li>Maîtrise de soi</li>
+                      <li>Esprit d'équipe</li>
+                      <li>Autonomie</li>
+                    </ul>
+                  </p>
+                  <p class="mx-10 text-md font-extrabold "> HOBBIES </p>
+                  <p class="m-4  ">
+                    <ul>
+                      <li>Sports</li>
+                      <li>Jeux-vidéo</li>
+                      <li>Cinéphile</li>
+                      <li>Caféphile</li>
+                    </ul>
+                  </p>
+                </motion.div>
                 {/* </Draggable> */}
               </div>
               <div className="flex flex-col w-full">
