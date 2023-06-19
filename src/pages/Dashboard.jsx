@@ -42,8 +42,8 @@ function Dashboard() {
       {" "}
       <StarsCanvas />
       <div className="flex flex-row flex-wrap items-center justify-center">
-        <div className="flex flex-row xl:flex-col w-full flex-wrap items-center justify-center">
-          <div className="flex flex-row">
+        <div className="flex flex-row xl:flex-col w-full flex-wrap items-center justify-center ">
+          <div className="flex flex-row ">
             <Link to="/" onClick={handleNav}>
               <div className="green-pink-gradient mr-10 mt-5 p-[1px] rounded-[20px] shadow-card">
                 <div className="bg-tertiary  rounded-[20px]  h-[40px] w-[40px] flex justify-evenly items-center flex-col">
@@ -61,8 +61,8 @@ function Dashboard() {
               </div>
             </Link>
 
-            <div className="green-pink-gradient mt-5 p-[1px] rounded-[20px] shadow-card">
-              <div className="bg-tertiary  rounded-[20px] py-5 h-[40px] w-[150px] flex justify-evenly items-center flex-col">
+            <div className="green-pink-gradient mt-5 p-[1px] rounded-[20px] shadow-card ">
+              <div className="bg-tertiary  rounded-[20px] py-5 h-[40px] w-[150px] flex justify-evenly items-center flex-col ">
                 <h3 className="text-white text-[20px] font-bold text-center">
                   <a
                     href={`cv/CVOmarMelloulchi.pdf`}
@@ -80,8 +80,8 @@ function Dashboard() {
           {/* <div className="flex justify-center items-center m-12 ">
         </div> */}
 
-          <div className="flex flex-row ">
-            <div className="flex flex-row w-[700px] h-[900px] rounded-xl sm:m-20 backdrop-blur-sm ">
+          <div className="flex flex-col md:flex-row bg-gradient-to-br w-[800px] h-[1000px] rounded-3xl mt-20 ">
+            <div className="flex flex-col md:flex-row w-[700px] h-[900px] rounded-xl sm:m-20 backdrop-blur-sm ">
               <div className="flex flex-col w-full justify-center items-center   ">
                 {/* <Draggable
                   position={{
@@ -90,7 +90,7 @@ function Dashboard() {
                   }}
                   onDrag={onDrag}
                 > */}
-                <div className=" w-[260px] h-[200px] bg-opacity-5 rounded bg-clip-padding backdrop-filter handle">
+                <div className=" w-[320px] h-[200px] bg-opacity-5 rounded bg-clip-padding backdrop-filter handle">
                   <img className="rounded-xl " src={pfolioimg} alt="" />
                 </div>
                 {/* </Draggable>
@@ -110,7 +110,8 @@ function Dashboard() {
                     bounce: 0.4,
                     duration: 0.8,
                   }}
-                  className="w-[260px] mt-10 rounded-xl h-[650px]  bg-blue-500 bg-opacity-5 bg-clip-padding backdrop-filter"
+                  className="w-[320px] mt-10 rounded-xl md:h-[650px] bg-opacity-5 bg-clip-padding backdrop-filter  bg-blue-500
+                     "
                 >
                   <motion.div className="card" variants={cardVariants}>
 
@@ -155,8 +156,8 @@ function Dashboard() {
                 </motion.div>
                 {/* </Draggable> */}
               </div>
-              <div className="flex flex-col w-full">
-                <div className=" w-[400px] h-[550px]  bg-blue-500 bg-opacity-5 backdrop-blur-xl rounded-xl bg-clip-padding backdrop-filter">
+              <div className="flex flex-col w-full justify-center items-center ">
+                <div className=" w-[320px] md:w-[400px] h-[630px]  md:h-[550px]  bg-blue-500 bg-opacity-5 backdrop-blur-xl rounded-xl bg-clip-padding backdrop-filter">
                   <h1 class="m-3 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-3xl dark:text-white">
                     PROJET - EXPERIENCES PRO
                   </h1>
@@ -184,7 +185,7 @@ function Dashboard() {
                     d'un site CV via HTML / CSS / JS
                   </p>
                 </div>
-                <div className=" w-[400px] h-[340px] mt-10  rounded-xl  bg-blue-500 bg-opacity-5">
+                <div className=" w-[320px] md:w-[400px]  h-[340px] mt-10  rounded-xl  bg-blue-500 bg-opacity-5">
                   {" "}
                   <h1 class="m-3 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-3xl dark:text-white">
                     FORMATION
