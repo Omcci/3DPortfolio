@@ -156,8 +156,8 @@ function Dashboard() {
                 </motion.div>
                 {/* </Draggable> */}
               </div>
-              <div className="flex flex-col w-full justify-center items-center ">
-                <div className=" w-[320px] md:w-[400px] h-[630px]  md:h-[550px]  bg-blue-500 bg-opacity-5 backdrop-blur-xl rounded-xl bg-clip-padding backdrop-filter">
+              <div className="flex flex-col w-full justify-center items-center  ">
+                <div className=" w-[320px] md:w-[400px] h-[630px]  md:h-[550px]  bg-blue-500 bg-opacity-5 backdrop-blur-xl rounded-xl bg-clip-padding backdrop-filter ">
                   <h1 class="m-3 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-3xl dark:text-white">
                     PROJET - EXPERIENCES PRO
                   </h1>
@@ -190,10 +190,9 @@ function Dashboard() {
                   <h1 class="m-3 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-3xl dark:text-white">
                     FORMATION
                   </h1>
-                  <p class="mx-10 text-md font-extrabold "> WILD CODE SCHOOL</p>
+                  <p class="mx-10 text-md font-extrabold "> DEVELOPPEMENT WEB - WILD CODE SCHOOL</p>
                   <p class="m-4  ">
-                    <span className="font-extrabold">Projet perso :</span>{" "}
-                    Création d'un portfolio en REACT/ TailwindCSS et ThreeJS{" "}
+                    Formation développeur web Fullstack pour le titre RNCP 5 Développeur Web et Web mobile (2023){" "}
                   </p>
                   <p class="mx-10 text-md font-extrabold ">
                     {" "}
