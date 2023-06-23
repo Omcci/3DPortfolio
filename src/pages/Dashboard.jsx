@@ -90,7 +90,7 @@ function Dashboard() {
                   }}
                   onDrag={onDrag}
                 > */}
-                <div className=" w-[320px] h-[200px] bg-opacity-5 rounded bg-clip-padding backdrop-filter handle">
+                <div className=" my-10 w-[320px] h-[200px] bg-opacity-5 rounded bg-clip-padding backdrop-filter handle md:my-10">
                   <img className="rounded-xl " src={pfolioimg} alt="" />
                 </div>
                 {/* </Draggable>
@@ -110,7 +110,7 @@ function Dashboard() {
                     bounce: 0.4,
                     duration: 0.8,
                   }}
-                  className="w-[320px] mt-10 rounded-xl md:h-[650px] bg-opacity-5 bg-clip-padding backdrop-filter  bg-blue-500
+                  className="w-[320px] my-10 rounded-xl md:h-[650px] bg-opacity-5 bg-clip-padding backdrop-filter  bg-blue-500
                      "
                 >
                   <motion.div className="card" variants={cardVariants}>
@@ -156,8 +156,8 @@ function Dashboard() {
                 </motion.div>
                 {/* </Draggable> */}
               </div>
-              <div className="flex flex-col w-full justify-center items-center  ">
-                <div className=" w-[320px] md:w-[400px] h-[630px]  md:h-[550px]  bg-blue-500 bg-opacity-5 backdrop-blur-xl rounded-xl bg-clip-padding backdrop-filter ">
+              <div className="flex flex-col w-full justify-center items-center md:mx-10 ">
+                <div className=" w-[320px] md:w-[400px] h-[660px] md:h-[590px]  bg-blue-500 bg-opacity-5 backdrop-blur-xl rounded-xl bg-clip-padding backdrop-filter ">
                   <h1 class="m-3 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-3xl dark:text-white">
                     PROJET - EXPERIENCES PRO
                   </h1>
@@ -185,7 +185,7 @@ function Dashboard() {
                     d'un site CV via HTML / CSS / JS
                   </p>
                 </div>
-                <div className=" w-[320px] md:w-[400px]  h-[340px] mt-10  rounded-xl  bg-blue-500 bg-opacity-5">
+                <div className=" w-[320px] md:w-[400px]  md:h-[360px] mt-10  rounded-xl  bg-blue-500 bg-opacity-5">
                   {" "}
                   <h1 class="m-3 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-3xl dark:text-white">
                     FORMATION
