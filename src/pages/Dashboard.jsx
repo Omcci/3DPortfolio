@@ -107,13 +107,13 @@ function Dashboard() {
                   animate="onscreen"
                   transition={{
                     type: "spring",
-                    bounce: 0.4,
-                    duration: 0.8,
+                    bounce: 2,
+                    duration: 1,
                   }}
                   className="w-[320px] my-10 rounded-xl md:h-[650px] bg-opacity-5 bg-clip-padding backdrop-filter  bg-blue-500
                      "
                 >
-                  <motion.div className="card" variants={cardVariants}>
+                  <motion.div  variants={cardVariants}>
 
 
                   <p class="mt-4 mx-10 text-md font-extrabold "> LANGUES </p>
@@ -135,7 +135,7 @@ function Dashboard() {
                       <li>Scrum/Agile</li>
                     </ul>
                   </p>
-                  </motion.div>
+                  
                   <p class="mx-10 text-md font-extrabold "> SOFT SKILLS </p>
                   <p class="m-4  ">
                     <ul>
@@ -153,11 +153,20 @@ function Dashboard() {
                       <li>Caféphile</li>
                     </ul>
                   </p>
+                  </motion.div>
                 </motion.div>
                 {/* </Draggable> */}
               </div>
-              <div className="flex flex-col w-full justify-center items-center md:mx-10 ">
-                <div className=" w-[320px] md:w-[400px] h-[660px] md:h-[590px]  bg-blue-500 bg-opacity-5 backdrop-blur-xl rounded-xl bg-clip-padding backdrop-filter ">
+              <motion.div
+                  
+                  initial="offscreen"
+                  animate="onscreen"
+                  transition={{
+                    type: "spring",
+                    bounce: 2,
+                    duration: 1,
+                  }} className="flex flex-col w-full justify-center items-center md:mx-10 ">
+                <motion.div  variants={cardVariants} className=" w-[320px] md:w-[400px] h-[660px] md:h-[590px]  bg-blue-500 bg-opacity-5 backdrop-blur-xl rounded-xl bg-clip-padding backdrop-filter ">
                   <h1 class="m-3 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-3xl dark:text-white">
                     PROJET - EXPERIENCES PRO
                   </h1>
@@ -184,8 +193,8 @@ function Dashboard() {
                     <span className="font-extrabold">Projet 1 :</span> Création
                     d'un site CV via HTML / CSS / JS
                   </p>
-                </div>
-                <div className=" w-[320px] md:w-[400px]  md:h-[360px] my-10  rounded-xl  bg-blue-500 bg-opacity-5">
+                </motion.div>
+                <motion.div  variants={cardVariants} className=" w-[320px] md:w-[400px]  md:h-[360px] my-10  rounded-xl  bg-blue-500 bg-opacity-5">
                   {" "}
                   <h1 class="m-3 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-3xl dark:text-white">
                     FORMATION
@@ -202,8 +211,8 @@ function Dashboard() {
                     Obtention d'une licence en science et technique des
                     activités physiques et sportives (2011 - 2014){" "}
                   </p>
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
             </div>
             {/* <div className="green-pink-gradient p-[1px] rounded-[20px] shadow-card m-5 sm:m-20">
             <img
