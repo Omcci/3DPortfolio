@@ -81,7 +81,7 @@ function Dashboard() {
         </div> */}
 
           <div className="flex flex-col md:flex-row bg-gradient-to-br w-[800px] h-[1000px] rounded-3xl mt-20 ">
-            <div className="flex flex-col md:flex-row w-[700px] h-[900px] rounded-xl sm:m-20 backdrop-blur-sm ">
+            <div className="flex flex-col md:flex-row w-[700px] h-[900px] rounded-xl sm:m-20 backdrop-blur-sm md:my-10">
               <div className="flex flex-col w-full justify-center items-center   ">
                 {/* <Draggable
                   position={{
@@ -185,7 +185,7 @@ function Dashboard() {
                     d'un site CV via HTML / CSS / JS
                   </p>
                 </div>
-                <div className=" w-[320px] md:w-[400px]  md:h-[360px] mt-10  rounded-xl  bg-blue-500 bg-opacity-5">
+                <div className=" w-[320px] md:w-[400px]  md:h-[360px] my-10  rounded-xl  bg-blue-500 bg-opacity-5">
                   {" "}
                   <h1 class="m-3 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-3xl dark:text-white">
                     FORMATION
