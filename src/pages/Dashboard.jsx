@@ -1,9 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
-import cv from "../assets/CVOmarMelloulchi.png";
 import { StarsCanvas } from "../components";
 import { pfolioimg } from "../assets";
-import Draggable from "react-draggable";
-import { useState } from "react";
 import { motion } from "framer-motion";
 
 function Dashboard() {
