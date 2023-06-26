@@ -22,8 +22,8 @@ function Dashboard() {
       
       transition: {
         type: "spring",
-        bounce: 0.4,
-        duration: 0.8,
+        bounce: 0.2,
+        duration: 1.4,
       },
     },
   };
@@ -100,17 +100,19 @@ function Dashboard() {
                 > */}
                 <motion.div
                   
-                  initial="offscreen"
-                  animate="onscreen"
-                  transition={{
-                    type: "spring",
-                    bounce: 2,
-                    duration: 1,
-                  }}
+                  initial={{ y: 1000}}
+                  animate={{ y: 0}}
+                  transition= {
+                   { type: "spring",
+                    bounce: 0.2,
+                    duration: 1.2,
+                    }
+                  }
+                
                   className="w-[320px] my-10 rounded-xl md:h-[650px] bg-opacity-5 bg-clip-padding backdrop-filter  bg-blue-500
                      "
                 >
-                  <motion.div  variants={cardVariants}>
+                  <div >
 
 
                   <p class="mt-4 mx-10 text-md font-extrabold "> LANGUES </p>
@@ -150,19 +152,21 @@ function Dashboard() {
                       <li>Caféphile</li>
                     </ul>
                   </p>
-                  </motion.div>
+                  </div>
                 </motion.div>
                 {/* </Draggable> */}
               </div>
               <motion.div
                   
-                  initial="offscreen"
-                  animate="onscreen"
-                  transition={{
-                    type: "spring",
-                    bounce: 2,
-                    duration: 1,
-                  }} className="flex flex-col w-full justify-center items-center md:mx-10 ">
+                  initial={{ y: 1000}}
+                  animate={{ y: 0}}
+                  transition= {
+                   { type: "spring",
+                    bounce: 0.2,
+                    duration: 1.2,
+                    delay: 0.3,
+                    }
+                  } className="flex flex-col w-full justify-center items-center md:mx-10 ">
                 <motion.div  variants={cardVariants} className=" w-[320px] md:w-[400px] h-[660px] md:h-[590px]  bg-blue-500 bg-opacity-5 backdrop-blur-xl rounded-xl bg-clip-padding backdrop-filter ">
                   <h1 class="m-3 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-3xl dark:text-white">
                     PROJET - EXPERIENCES PRO
