@@ -2,6 +2,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { StarsCanvas } from "../components";
 import { pfolioimg } from "../assets";
 import { motion } from "framer-motion";
+import Draggable from "react-draggable";
+import { useState } from "react";
 
 function Dashboard() {
   // const [currentPosition, setCurrentPosition] = useState({
@@ -13,20 +15,20 @@ function Dashboard() {
   //   setCurrentPosition({ xRate: data.lastX, yRate: data.lastY });
   // };
 
-  const cardVariants = {
-    offscreen: {
-      y: 300,
-    },
-    onscreen: {
-      y: 0,
+  // const cardVariants = {
+  //   offscreen: {
+  //     y: 300,
+  //   },
+  //   onscreen: {
+  //     y: 0,
       
-      transition: {
-        type: "spring",
-        bounce: 0.2,
-        duration: 1.4,
-      },
-    },
-  };
+  //     transition: {
+  //       type: "spring",
+  //       bounce: 0.2,
+  //       duration: 1.4,
+  //     },
+  //   },
+  // };
 
   const nav = useNavigate();
 
@@ -37,7 +39,7 @@ function Dashboard() {
   return (
     <div className="container mx-auto">
       {" "}
-      <StarsCanvas />
+      {/* <StarsCanvas /> */}
       <div className="flex flex-row flex-wrap items-center justify-center">
         <div className="flex flex-row xl:flex-col w-full flex-wrap items-center justify-center ">
           <div className="flex flex-row ">
@@ -80,6 +82,16 @@ function Dashboard() {
           <div className="flex flex-col md:flex-row bg-gradient-to-br w-[800px] h-[1000px] rounded-3xl mt-20 ">
             <div className="flex flex-col md:flex-row w-[700px] h-[900px] rounded-xl sm:m-20 backdrop-blur-sm md:my-10">
               <div className="flex flex-col w-full justify-center items-center   ">
+                <Draggable
+                  cancel="strong"
+                  zindex='100'
+                >
+                  <div>
+                <div className="  my-10 w-[320px] h-[200px] bg-opacity-5 rounded bg-clip-padding backdrop-filter handle md:my-10">
+                  <img draggable="false" className="rounded-xl " src={pfolioimg} alt="" />
+                </div>
+                </div>  
+                </Draggable>
                 {/* <Draggable
                   position={{
                     x: currentPosition.xRate,
@@ -87,31 +99,26 @@ function Dashboard() {
                   }}
                   onDrag={onDrag}
                 > */}
-                <div className=" my-10 w-[320px] h-[200px] bg-opacity-5 rounded bg-clip-padding backdrop-filter handle md:my-10">
-                  <img className="rounded-xl " src={pfolioimg} alt="" />
-                </div>
-                {/* </Draggable>
-                <Draggable
-                  position={{
-                    x: currentPosition.xRate,
-                    y: currentPosition.yRate,
-                  }}
-                  onDrag={onDrag}
-                > */}
+                 <Draggable
+                 cancel="strong"
+                 zindex='50'
+                >
                 <motion.div
                   
-                  initial={{ y: 1000}}
-                  animate={{ y: 0}}
-                  transition= {
-                   { type: "spring",
-                    bounce: 0.2,
-                    duration: 1.2,
-                    }
-                  }
+                  // initial={{ y: 1000}}
+                  // animate={{ y: 0}}
+                  // transition= {
+                  //  { type: "spring",
+                  //   bounce: 0.2,
+                  //   duration: 1.2,
+                  //   }
+                  // }
                 
                   className="w-[320px] my-10 rounded-xl md:h-[650px] bg-opacity-5 bg-clip-padding backdrop-filter  bg-blue-500
                      "
                 >
+                  
+                  
                   <div >
 
 
@@ -154,8 +161,9 @@ function Dashboard() {
                   </p>
                   </div>
                 </motion.div>
-                {/* </Draggable> */}
+                  </Draggable>
               </div>
+             
               <motion.div
                   
                   initial={{ y: 1000}}
@@ -167,7 +175,10 @@ function Dashboard() {
                     delay: 0.3,
                     }
                   } className="flex flex-col w-full justify-center items-center md:mx-10 ">
-                <motion.div  variants={cardVariants} className=" w-[320px] md:w-[400px] h-[660px] md:h-[590px]  bg-blue-500 bg-opacity-5 backdrop-blur-xl rounded-xl bg-clip-padding backdrop-filter ">
+                    <Draggable
+                  cancel="strong"
+                >
+                <div  className=" w-[320px] md:w-[400px] h-[660px] md:h-[590px]  bg-blue-500 bg-opacity-5 backdrop-blur-xl rounded-xl bg-clip-padding backdrop-filter ">
                   <h1 class="m-3 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-3xl dark:text-white">
                     PROJET - EXPERIENCES PRO
                   </h1>
@@ -194,8 +205,12 @@ function Dashboard() {
                     <span className="font-extrabold">Projet 1 :</span> Création
                     d'un site CV via HTML / CSS / JS
                   </p>
-                </motion.div>
-                <motion.div  variants={cardVariants} className=" w-[320px] md:w-[400px]  md:h-[360px] my-10  rounded-xl  bg-blue-500 bg-opacity-5">
+                </div>
+                </Draggable>
+                <Draggable
+                  cancel="strong"
+                >
+                <div   className=" w-[320px] md:w-[400px]  md:h-[360px] my-10  rounded-xl  bg-blue-500 bg-opacity-5">
                   {" "}
                   <h1 class="m-3 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-3xl dark:text-white">
                     FORMATION
@@ -212,8 +227,10 @@ function Dashboard() {
                     Obtention d'une licence en science et technique des
                     activités physiques et sportives (2011 - 2014){" "}
                   </p>
-                </motion.div>
+                </div>
+                </Draggable>
               </motion.div>
+           
             </div>
             {/* <div className="green-pink-gradient p-[1px] rounded-[20px] shadow-card m-5 sm:m-20">
             <img
