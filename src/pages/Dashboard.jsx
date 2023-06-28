@@ -37,7 +37,7 @@ function Dashboard() {
   };
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
       {" "}
       {/* <StarsCanvas /> */}
       <div className="flex flex-row flex-wrap items-center justify-center">
