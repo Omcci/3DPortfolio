@@ -37,11 +37,13 @@ function Dashboard() {
   };
 
   return (
-    <div className="container mx-auto bg-gradient-to-tr from-gray-700 via-gray-900 to-black">
+    <div className="container mx-auto ">
       {" "}
-      <StarsCanvas />
+      {/* <StarsCanvas /> */}
       <div className="flex flex-row flex-wrap items-center justify-center">
+        
         <div className="flex flex-row xl:flex-col w-full flex-wrap items-center justify-center ">
+          
           <div className="flex flex-row ">
             <Link to="/" onClick={handleNav}>
               <div className="green-pink-gradient mr-10 mt-5 p-[1px] rounded-[20px] shadow-card">
@@ -61,7 +63,9 @@ function Dashboard() {
             </Link>
 
             <div className="green-pink-gradient mt-5 p-[1px] rounded-[20px] shadow-card ">
+              
               <div className="bg-tertiary  rounded-[20px] py-5 h-[40px] w-[150px] flex justify-evenly items-center flex-col ">
+                
                 <h3 className="text-white text-[20px] font-bold text-center">
                   <a
                     href={`cv/CVOmarMelloulchi.pdf`}
@@ -79,14 +83,18 @@ function Dashboard() {
           {/* <div className="flex justify-center items-center m-12 ">
         </div> */}
 
-          <div className="flex flex-col md:flex-row bg-gradient-to-br w-[800px] h-[1000px] rounded-3xl mt-20 ">
+          <div className="flex flex-col md:flex-row  w-[800px] h-[1000px] rounded-3xl mt-20 ">
+            
             <div className="flex flex-col md:flex-row w-[700px] h-[900px] rounded-xl sm:m-20 backdrop-blur-sm md:my-10">
+            <StarsCanvas />
               <div className="flex flex-col w-full justify-center items-center   ">
                 <Draggable
                   cancel="strong"
                   zindex='100'
                 >
+                  
                   <div>
+                    
                 <div className="  my-10 w-[320px] h-[200px] bg-opacity-5 rounded bg-clip-padding backdrop-filter handle md:my-10">
                   <img draggable="false" className="rounded-xl " src={pfolioimg} alt="" />
                 </div>
@@ -118,7 +126,7 @@ function Dashboard() {
                      "
                 >
                   
-                  
+                  {/* <StarsCanvas /> */}
                   <div >
 
 
