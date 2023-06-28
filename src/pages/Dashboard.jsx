@@ -37,9 +37,9 @@ function Dashboard() {
   };
 
   return (
-    <div className="container mx-auto bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+    <div className="container mx-auto bg-gradient-to-tr from-gray-700 via-gray-900 to-black">
       {" "}
-      {/* <StarsCanvas /> */}
+      <StarsCanvas />
       <div className="flex flex-row flex-wrap items-center justify-center">
         <div className="flex flex-row xl:flex-col w-full flex-wrap items-center justify-center ">
           <div className="flex flex-row ">
