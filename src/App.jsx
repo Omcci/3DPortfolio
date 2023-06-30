@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
+import HubertEats from "./pages/HubertEats";
 
 const App = () => {
   return (
@@ -23,6 +24,14 @@ const App = () => {
           element={
             <>
               <Dashboard />
+            </>
+          }
+        />
+         <Route
+          path="/huberteats"
+          element={
+            <>
+              <HubertEats />
             </>
           }
         />

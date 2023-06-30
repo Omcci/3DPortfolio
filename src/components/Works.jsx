@@ -6,6 +6,7 @@ import { internet } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { Link } from "react-router-dom";
 
 const ProjectCard = ({
   index,
@@ -16,6 +17,7 @@ const ProjectCard = ({
   vidmp4,
   source_code_link,
   deployedproject,
+  routeproject,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 1)}>
@@ -43,10 +45,7 @@ const ProjectCard = ({
             className="w-[80%] h-[100%] object-cover rounded-2xl texttransform"
           >
             <source src={image} type="video/webm" />
-            <source
-              src={vidmp4}
-              type="video/mp4"
-            />
+            <source src={vidmp4} type="video/mp4" />
           </video>
 
           {/* <source src="my-animation.mp4" type="video/mp4" /> */}
@@ -64,16 +63,28 @@ const ProjectCard = ({
             </div>
           </div>
           <div className="absolute top-12 right-0 flex justify-end m-4 card-img_hover texttransform">
-            <div
-              onClick={() => window.open(deployedproject, "_blank")}
-              className="bg-white w-8 h-8 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={internet}
-                alt="website"
-                className="w-2/3 h-2/3 object-contain"
-              />
-            </div>
+            {routeproject ? (
+              <Link to="/huberteats">
+                <div className="bg-white w-8 h-8 rounded-full flex justify-center items-center cursor-pointer">
+                  <img
+                    src={internet}
+                    alt="website"
+                    className="w-2/3 h-2/3 object-contain"
+                  />
+                </div>
+              </Link>
+            ) : (
+              <div
+                onClick={() => window.open(deployedproject, "_blank")}
+                className="bg-white w-8 h-8 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <img
+                  src={internet}
+                  alt="website"
+                  className="w-2/3 h-2/3 object-contain"
+                />
+              </div>
+            )}
           </div>
         </div>
         <div className="mt-5 ">

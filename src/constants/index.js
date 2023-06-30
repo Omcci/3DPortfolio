@@ -267,6 +267,7 @@ const projects = [
     image: hbetswebm,
     source_code_link: "https://github.com/Omcci/HubertEat-front/tree/main",
     deployedproject: "",
+    routeproject: true
   },
   {
     name: "Portfolio",
