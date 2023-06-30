@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { styles } from "../styles";
+import {  hbetsmp4, hbetswebm } from "../assets";
 
 function HubertEats() {
   const nav = useNavigate();
@@ -40,9 +41,26 @@ function HubertEats() {
       </div>
       <div className="flex flex-col justify-center items-center ">
         {" "}
-        <div className="w-[700px] h-[500px] bg-white">
-            <video src=""></video>
+        <div className="w-[850px] h-[500px] bg-white rounded-lg ">
+        <video
+            autoPlay
+            loop
+            muted
+            controls={""}
+            playsInline
+            className="w-[100%] h-[100%] object-cover rounded-2xl texttransform"
+          >
+            <source src={hbetswebm} type="video/webm" />
+            <source src={hbetsmp4} type="video/mp4" />
+          </video>
+            
         </div>
+        <p className={`${styles.heroSubText} my-10 text-white-100  mx-[350px] border rounded-lg px-10 py-10gi`}>
+            Je développe des applications web et je suis actuellement{" "}
+            en formation au bootcamp de Wild Code School à Paris. Je suis en
+            recherche active d'une alternance pour un poste de Développeur Web
+            Frontend ou Fullstack à compter de Septembre 2023
+          </p>
       </div>
     </>
   );
