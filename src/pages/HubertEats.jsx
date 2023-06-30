@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { styles } from "../styles";
-import {  hbetsmp4, hbetswebm } from "../assets";
+import { hbetsmp4, hbetswebm } from "../assets";
 
 function HubertEats() {
   const nav = useNavigate();
@@ -12,7 +12,7 @@ function HubertEats() {
   return (
     <>
       <div className="w-full h-full">
-        <Link to="/" onClick={handleNav}>
+        {/* <Link to="/" onClick={handleNav}>
           <div className="green-pink-gradient mr-10 mt-5 p-[1px] rounded-[20px] shadow-card">
             <div className="bg-tertiary  rounded-[20px]  h-[40px] w-[40px] flex justify-evenly items-center flex-col">
               <h3 className="text-white text-[20px] font-bold text-center">
@@ -27,7 +27,7 @@ function HubertEats() {
               </h3>
             </div>
           </div>
-        </Link>
+        </Link> */}
       </div>
       <div className="flex flex-col justify-center items-center mt-20">
         <h1
@@ -42,7 +42,7 @@ function HubertEats() {
       <div className="flex flex-col justify-center items-center ">
         {" "}
         <div className="w-[850px] h-[500px] bg-white rounded-lg ">
-        <video
+          <video
             autoPlay
             loop
             muted
@@ -53,14 +53,17 @@ function HubertEats() {
             <source src={hbetswebm} type="video/webm" />
             <source src={hbetsmp4} type="video/mp4" />
           </video>
-            
         </div>
-        <p className={`${styles.heroSubText} my-10 text-white-100  mx-[350px] border rounded-lg px-10 py-10gi`}>
-            Je développe des applications web et je suis actuellement{" "}
-            en formation au bootcamp de Wild Code School à Paris. Je suis en
-            recherche active d'une alternance pour un poste de Développeur Web
-            Frontend ou Fullstack à compter de Septembre 2023
-          </p>
+        <p
+          className={`${styles.sectionSubText} my-10 text-white-100  mx-[350px] border rounded-lg px-10 py-10`}
+        >
+          "Ce projet est réalisé dans le cadre d'un test technique pour une
+          entreprise. La contrainte de temps imposée fut de 5jours.
+          L'application permet d'afficher des recettes, d'en ajouter à un menu
+          personnalisé. Il est également possible de réorganiser ses menus dans
+          une page dédiée. Ce projet est réalisé en bi-repo avec React en front
+          et Node en back."
+        </p>
       </div>
     </>
   );
