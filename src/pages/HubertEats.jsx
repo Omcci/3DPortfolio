@@ -12,22 +12,15 @@ function HubertEats() {
   return (
     <>
       <div className="w-full h-full">
-        {/* <Link to="/" onClick={handleNav}>
-          <div className="green-pink-gradient mr-10 mt-5 p-[1px] rounded-[20px] shadow-card">
-            <div className="bg-tertiary  rounded-[20px]  h-[40px] w-[40px] flex justify-evenly items-center flex-col">
-              <h3 className="text-white text-[20px] font-bold text-center">
-                <a
-                  href="https://github.com/Omcci"
-                  className="cursor-pointer"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Back
-                </a>
+        <Link to="/" onClick={handleNav}>
+          {/* <div className="green-pink-gradient mr-10 mt-5 p-[1px] rounded-[20px] shadow-card"> */}
+            {/* <div className="bg-tertiary  rounded-[20px]  h-[40px] w-[40px] flex justify-evenly items-center flex-col"> */}
+              <h3 className="text-white text-[20px] font-bold ">
+                Back
               </h3>
-            </div>
-          </div>
-        </Link> */}
+            {/* </div> */}
+          {/* </div> */}
+        </Link>
       </div>
       <div className="flex flex-col justify-center items-center mt-20">
         <h1
@@ -41,7 +34,7 @@ function HubertEats() {
       </div>
       <div className="flex flex-col justify-center items-center ">
         {" "}
-        <div className="w-[850px] h-[500px] bg-white rounded-lg ">
+        <div className="w-[100vw] h-full lg:w-[850px] lg:h-[500px] bg-white rounded-lg ">
           <video
             autoPlay
             loop
@@ -55,7 +48,7 @@ function HubertEats() {
           </video>
         </div>
         <p
-          className={`${styles.sectionSubText} my-10 text-white-100  mx-[350px] border rounded-lg px-10 py-10`}
+          className={`${styles.sectionSubText} my-10 text-white-100 mx-[50px]  lg:mx-[350px] border rounded-lg px-10 py-10`}
         >
           "Ce projet est réalisé dans le cadre d'un test technique pour une
           entreprise. La contrainte de temps imposée fut de 5jours.
