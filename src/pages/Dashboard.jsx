@@ -90,7 +90,7 @@ function Dashboard() {
               <div className="flex flex-col w-full justify-center items-center   ">
                 <Draggable
                   cancel="strong"
-                  zindex='100'
+                  bounds={{left: 0, top: 0, right: 100, bottom: 50}}
                 >
                   
                   <div>
@@ -109,7 +109,8 @@ function Dashboard() {
                 > */}
                  <Draggable
                  cancel="strong"
-                 zindex='50'
+                 
+                 bounds={{left: 0, top: 0, right: 100, bottom: 50}}
                 >
                 <motion.div
                   
@@ -185,6 +186,7 @@ function Dashboard() {
                   } className="flex flex-col w-full justify-center items-center md:mx-10 ">
                     <Draggable
                   cancel="strong"
+                  bounds={{left: 0, top: 0, right: 100, bottom: 50}}
                 >
                 <div  className=" w-[320px] md:w-[400px] h-[660px] md:h-[590px]  bg-blue-500 bg-opacity-5 backdrop-blur-xl rounded-xl bg-clip-padding backdrop-filter ">
                   <h1 class="m-3 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-3xl dark:text-white">
@@ -217,6 +219,7 @@ function Dashboard() {
                 </Draggable>
                 <Draggable
                   cancel="strong"
+                  bounds={{left: 0, top: 0, right: 100, bottom: 50}}
                 >
                 <div   className=" w-[320px] md:w-[400px]  md:h-[360px] my-10  rounded-xl  bg-blue-500 bg-opacity-5">
                   {" "}
