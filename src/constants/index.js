@@ -320,9 +320,9 @@ const projects = [
     deployedproject: "https://t0mle.github.io/WCS-project1/",
   },
   {
-    name: "Soon",
+    name: "Tampon Memorial Galery",
     description:
-      "En travaux, projet à venir.",
+      "Projet 3 au sein de la Wild Code School. En travaux, projet à venir.",
     tags: [
       {
         name: "react",
