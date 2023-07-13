@@ -322,7 +322,7 @@ const projects = [
   {
     name: "Tampon Memorial Galery",
     description:
-      "Projet 3 au sein de la Wild Code School. Il s'agit d'une gallerie d'art virtuelle, qui relate des travaux d'Hippolyte Charles Napoléon Mortier sur l'usine du Tampon et la vie des travailleurs de l'époque. En travaux, projet à venir.",
+      "Projet 3 au sein de la Wild Code School. Il s'agit d'une gallerie d'art virtuelle, qui relate des travaux d'Hippolyte Charles Napoléon Mortier sur l'usine du Tampon et la vie des travailleurs de l'époque.y En travaux, projet à venir.",
     tags: [
       {
         name: "react",

@@ -1,7 +1,7 @@
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { github, mvid } from "../assets";
+import { github } from "../assets";
 import { internet } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";

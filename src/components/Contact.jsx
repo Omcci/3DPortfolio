@@ -1,72 +1,61 @@
-import { useState, useRef } from "react";
 import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
-// import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-// import { Canvas } from "@react-three/fiber";
-
-// import { fromHalfFloat } from "three/src/extras/DataUtils";
-
-//template_fwm2gdw
-// service_l8nwy68
-//VT6r6zvnhzLTI-ejc (pbkey)
 
 const Contact = () => {
-  const formRef = useRef();
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [loading, setLoading] = useState(false);
+  // const formRef = useRef();
+  // const [form, setForm] = useState({
+  //   name: "",
+  //   email: "",
+  //   message: "",
+  // });
+  // const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
 
-    setForm({ ...form, [name]: value });
-  };
+  //   setForm({ ...form, [name]: value });
+  // };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   setLoading(true);
 
-    emailjs
-      .send(
-        "service_l8nwy68",
-        "template_fwm2gdw",
-        {
-          from_name: form.name,
-          to_name: "Omar",
-          from_email: form.email,
-          to_email: "omelloulchi@gmail.com",
-          message: form.message,
-        },
-        "VT6r6zvnhzLTI-ejc"
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Merci. Je reviendrais vers vous dés que possible.");
+  //   emailjs
+  //     .send(
+  //       "service_l8nwy68",
+  //       "template_fwm2gdw",
+  //       {
+  //         from_name: form.name,
+  //         to_name: "Omar",
+  //         from_email: form.email,
+  //         to_email: "omelloulchi@gmail.com",
+  //         message: form.message,
+  //       },
+  //       "VT6r6zvnhzLTI-ejc"
+  //     )
+  //     .then(
+  //       () => {
+  //         setLoading(false);
+  //         alert("Merci. Je reviendrais vers vous dés que possible.");
 
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.log(error);
-          alert("Une erreur s'est produite.");
-        }
-      );
-  };
+  //         setForm({
+  //           name: "",
+  //           email: "",
+  //           message: "",
+  //         });
+  //       },
+  //       (error) => {
+  //         setLoading(false);
+  //         console.log(error);
+  //         alert("Une erreur s'est produite.");
+  //       }
+  //     );
+  // };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex  gap-10 overflow-hidden">
-      {/* flex-col-reverse */}
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="  bg-black-100 p-8 rounded-2xl"
@@ -75,64 +64,7 @@ const Contact = () => {
         <h3 className={styles.sectionHeadText}>Contact.</h3>
         <p className={styles.sectionSubText}>Melloulchi.omar@gmail.com</p>
         <p className={styles.sectionSubText}>0670499728</p>
-
-        {/* 
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className="mt-12 flex flex-col gap-8"
-        >
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Ton Nom</span>
-            <input
-              type="text"
-              name="name"
-              value={form.name}
-              onChange={handleChange}
-              placeholder="Comment tu t'appelles ?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
-            />
-          </label>
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Ton Email</span>
-            <input
-              type="email"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              placeholder="Quel est ton email ?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
-            />
-          </label>
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Ton Message</span>
-            <textarea
-              rows={7}
-              name="message"
-              value={form.message}
-              onChange={handleChange}
-              placeholder="Que veux-tu me dire ?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
-            />
-          </label>
-
-          <button
-            type="submit"
-            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md rounded-2xl shadow-primary"
-          >
-            {loading ? "Envoi ..." : "Envoyer"}
-          </button>
-        </form> */}
       </motion.div>
-
-      {/* <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
-      > */}
-        {/* <Canvas>
-          <EarthCanvas />
-        </Canvas> */}
-      {/* </motion.div> */}
     </div>
   );
 };
